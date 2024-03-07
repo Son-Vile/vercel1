@@ -47,6 +47,10 @@ export default function Post({ post, preview }) {
                   property="og:title"
                   content={post.title}
                 />
+                 <meta
+                  property="og:url"
+                  content={`${domain}${post.slug}`}
+                />
                 <meta
                   property="og:image"
                   content={post.featuredImage?.node.sourceUrl}
